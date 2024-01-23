@@ -2,14 +2,18 @@
   "name": "client",
   "private": true,
   "version": "0.0.0",
+  "homepage": "http://tobyceballos.github.io/QRScanner",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "jsqr": "^1.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
